@@ -10,7 +10,7 @@ services:
       - TZ=America/Chicago
     volumes:
       - /srv/d/config/smokeping/config:/config
-      - ./data:/data
+      - /srv/d/data/smokeping/data:/data
     ports:
       - 8080:80
     restart: unless-stopped
